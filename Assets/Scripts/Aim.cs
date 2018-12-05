@@ -22,8 +22,9 @@ public class NewBehaviourScript : MonoBehaviour {
         float _upDownValue = Input.GetAxisRaw("Mouse Y");
         Vector3 _rotationX = new Vector3(_upDownValue, 0, 0);
         Vector3 _rotationY = new Vector3(0, _leftRightValue, 0);
+
         rigidB.MoveRotation(rigidB.rotation * Quaternion.Euler(_rotationY));
-        cam.transfer.
+        cam.transfer.Rotate(_rotationX / 3);
 
     }
 }
