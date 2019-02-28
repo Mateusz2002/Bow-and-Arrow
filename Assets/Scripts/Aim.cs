@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class Aim : MonoBehaviour {
     Rigidbody rigidB;
     [SerializeField]
     Camera cam;
@@ -10,12 +10,14 @@ public class NewBehaviourScript : MonoBehaviour {
 	void Start () {
         rigidB = GetComponent<Rigidbody>();
         Cursor.visible = false;
+        cam = GetComponentInChildren<Camera>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        AimLogic();
 	}
+
     void AimLogic()
     {
         float _leftRightValue = Input.GetAxisRaw("Mouse X");
@@ -24,7 +26,6 @@ public class NewBehaviourScript : MonoBehaviour {
         Vector3 _rotationY = new Vector3(0, _leftRightValue, 0);
 
         rigidB.MoveRotation(rigidB.rotation * Quaternion.Euler(_rotationY));
-        cam.transfer.Rotate(_rotationX / 3);
-
+        cam.transform.Rotate(_rotationX / 1);
     }
 }
