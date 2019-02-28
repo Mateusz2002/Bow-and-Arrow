@@ -313,50 +313,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2308f237c4c1f604e8c492fa924ee1d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
---- !u!4 &847196792 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4813951086376662, guid: 754ed9e9a5d919e40bcb5fb59ecd1bc4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1047529543}
+  verticalMouseSensitivity: 1
+  invertAim: 0
+  cam: {fileID: 1872172344}
 --- !u!1001 &987836970
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 847196792}
+    m_TransformParent: {fileID: 1872172342}
     m_Modifications:
     - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.49
+      value: 0.13001591
       objectReference: {fileID: 0}
     - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: -0.53999996
       objectReference: {fileID: 0}
     - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -2.17
+      value: 0.74161696
       objectReference: {fileID: 0}
     - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.023881366
+      value: 0.036734764
       objectReference: {fileID: 0}
     - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.7644746
+      value: 0.0919108
       objectReference: {fileID: 0}
     - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.028136598
+      value: 0.0035418156
       objectReference: {fileID: 0}
     - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.64359665
+      value: -0.9950831
       objectReference: {fileID: 0}
     - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -374,6 +371,18 @@ Prefab:
         type: 2}
       propertyPath: m_BlendShapeWeights.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.007554694
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.007554697
+      objectReference: {fileID: 0}
+    - target: {fileID: 4803929332359494, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.007554695
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86ba5fdd295a911429691b29e414fe04, type: 2}
@@ -709,6 +718,16 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adbf8bcc4e1fbb2438316097f1799faf, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1872172342 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4175944799062452, guid: 754ed9e9a5d919e40bcb5fb59ecd1bc4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1047529543}
+--- !u!20 &1872172344 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20302984396027158, guid: 754ed9e9a5d919e40bcb5fb59ecd1bc4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1047529543}
 --- !u!1001 &1997336813
 Prefab:
   m_ObjectHideFlags: 0
@@ -798,7 +817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a8d82f7c1df0d41ab732fbcd915b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pullspeed: 50
+  pullspeed: 100
   arrowPrefab: {fileID: 1365912339931004, guid: ccbff4b0101a6e444b48770b4e500e71,
     type: 2}
   arrow: {fileID: 0}

@@ -62,6 +62,8 @@ public class Shoot : MonoBehaviour {
             }
             _bowSkin.SetBlendShapeWeight(0, pullAmount);
             _arrowSkin.SetBlendShapeWeight(0, pullAmount);
+            if (Input.GetMouseButtonDown(0) && arrowSlotted == false)
+                SpawnArrow();
         }
     }
 }
