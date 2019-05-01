@@ -31,6 +31,7 @@ public class Aim : MonoBehaviour {
         float _upDownValue = _aimModifier*Input.GetAxisRaw("Mouse Y");
         Vector3 _rotationX = new Vector3(_upDownValue, 0, 0);
         Vector3 _rotationY = new Vector3(0, _leftRightValue, 0);
+
         rigidB.MoveRotation(rigidB.rotation * Quaternion.Euler(_rotationY));
         cam.transform.Rotate(_rotationX / verticalMouseSensitivity);
     }
